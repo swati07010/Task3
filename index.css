@@ -1,0 +1,155 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    margin: 0;
+}
+.chat-container-header {
+    height: 60px;
+    background: #6396cd;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: spin 1000ms linear infinite;
+    animation-name: changeColor;
+    animation-duration: 2s; /* Duration of color transition */
+    animation-timing-function: ease-in-out; 
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes changeColor {
+    0%, 100% { color: #0a3f3b; } /* Blue */
+    25% { color: #dc3545; } /* Red */
+    50% { color: #4a3907; } /* Yellow */
+    75% { color: #156026; } /* Green */
+}
+
+.chat-container {
+    width: 400px;
+    background-color: #c9c2c2;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+.message-content {
+    text-align: center;
+    font-size: 14px;
+    color: #0f391a;
+}
+
+.chat-box {
+    height: 300px;
+    overflow-y: scroll;
+    padding: 20px;
+}
+
+.chat-message {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    padding: 10px;
+    background: rgb(223, 218, 218);
+    border-radius: 20px;
+    height: auto;
+}
+
+.bot-message {
+    text-align: center;
+    font-weight: bold;
+}
+
+.user-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    padding: 10px;
+    background-color: #d8dce0;
+}
+
+
+
+.user-input input[type="text"] {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    font-size: 16px;
+    margin-right: 8px;
+    outline: none;
+    text-align: center;
+
+}
+.user-input button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.user-input button:hover {
+    background-color: #0056b3;
+}
+
+.send-icon {
+    cursor: pointer;
+    font-size: 24px;
+    color: #007bff;
+}
+
+.send-icon:hover {
+    color: #0056b3;
+}
+
+.loading {
+    color: green;
+    margin-left: 15px;
+}
+.rotated-button{
+    animation: spin 10s linear infinite, changeColor 1ms infinite ease-in-out;
+    border-radius: 60px;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    width: 20px;
+    padding-right: 15px;
+    padding-left:2px;
+    align-items: center;
+    text-align: center;
+    margin-right: -10px;
+    font: bold;
+    background-color: #eec1c1;
+    border: 2px solid rgb(31, 105, 25);
+}
+.user-input-text{
+    
+    margin-left: 10px;
+}
+.current-time{
+ text-align: right;
+ padding-top: 50px;
+ font-size: 15px;
+ cursor: pointer;
+ color: #156026;
+ font-weight: 900;
+ 
+}
+
+
+
